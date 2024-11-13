@@ -9,24 +9,18 @@ nav {
   justify-content: space-between;
 }
 
-nav .tweeter-text {
+nav .nav-title {
   font-family: 'Bungee', sans-serif;
 }
 
-nav .right-content {
+nav .nav-tweet-btn {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   text-align: center;
-  align-content: center;
 }
 
-nav .right-content .new {
-  margin-right: 10px;
-}
-
-nav .right-content i {
-  font-size: 1.5em;
+nav .nav-tweet-btn i {
+  font-size: 1.2em;
   color: #eb0a0a;
   margin-top: 5px;
 }
