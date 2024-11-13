@@ -4,11 +4,14 @@
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
 
-    <!-- External CSS -->
+    <!-- External CSS Normalize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
 
-    <!-- App CSS -->
+    <!-- Layout App CSS Link -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+
+    <!-- Link to nav.css -->
+    <link href="styles/nav.css" rel="stylesheet">
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -16,16 +19,25 @@
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
 
-    <!-- Fonts Requested -->
+    <!-- Links for Fonts Requested -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee:wght@400&family=Source+Sans+3:wght@300;600&display=swap" rel="stylesheet">
+
+    <!-- Link for Font Awesome Image Angles Down -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
       <span>tweeter</span>
+
+      <!-- Content on the right -->
+       <div class="right-content">
+        <p><strong>Write</strong> a new tweet</p>
+        <i class="fa-solid fa-angles-down"></i>
+       </div>
     </nav>
 
     <!-- Page-specific (main) content here -->
