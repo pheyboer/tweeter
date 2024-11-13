@@ -3,23 +3,37 @@ nav {
   width: 100%;
   background-color: #4056A1;
   color: #FFFFFF;
-  padding: 1.5em;
+  padding: 0 1.5em;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-nav span {
+nav .tweeter-text {
   font-family: 'Bungee', sans-serif;
 }
 
 nav .right-content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: right;
+  align-items: flex-end;
 }
 
-nav .right-content i {
+nav .right-content .new {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav .arrow-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+nav .arrow-container i {
   font-size: 1.5em;
-  color: red;
+  color: #eb0a0a;
+  margin-top: 5px;
 }
