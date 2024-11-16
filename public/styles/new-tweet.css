@@ -1,7 +1,7 @@
 /* Container for new tweet form */
 
 .new-tweet {
-  background-color: whitesmoke;
+  background-color: rgb(92, 176, 209);
   margin: 20px auto;
   padding: 20px;
   width: 100%;
@@ -9,6 +9,10 @@
 
 .new-tweet h2 {
 font-size: 25px;
+}
+
+.new-tweet label {
+  display: none;
 }
 
 .new-tweet textarea {
@@ -22,7 +26,7 @@ font-size: 25px;
   font-family: sans-serif;
 }
 
-.new-tweet button {
+.new-tweet-btn {
   background-color: #4056A1;
   font-family: 'Bungee', sans-serif;
   color: whitesmoke;
@@ -30,11 +34,11 @@ font-size: 25px;
   padding: 5px 10px;
 }
 
-.new-tweet button:active {
+.new-tweet-btn:active {
   background-color: azure;
 }
 
-.new-tweet button:hover {
+.new-tweet-btn:hover {
   background-color: rgb(152, 195, 239);
 }
 
