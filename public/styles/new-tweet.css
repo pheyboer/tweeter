@@ -18,7 +18,7 @@ font-size: 25px;
   width: 100%;
   padding: 10px;
   border: none;
-  border-bottom: 5px black;
+  border-bottom: 3px solid black;
   outline: none;
   resize: none;
 }
@@ -49,4 +49,5 @@ font-size: 25px;
 .new-tweet div {
   display: flex;
   justify-content: space-between;
+  margin: 10px;
 }
