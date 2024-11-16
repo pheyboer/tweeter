@@ -11,7 +11,7 @@ font-size: 25px;
 }
 
 .new-tweet label {
-  display: none;
+  font-weight: bold;
 }
 
 .new-tweet textarea {
@@ -44,6 +44,14 @@ font-size: 25px;
 
 .new-tweet-btn:hover {
   background-color: rgb(152, 195, 239);
+}
+
+.counter {
+  font-family: 'Bungee', sans-serif;
+}
+
+.counter.max-limit {
+  color: red;
 }
 
 .new-tweet div {
