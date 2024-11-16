@@ -13,11 +13,12 @@ font-size: 25px;
 
 .new-tweet textarea {
   width: 100%;
+  padding: 10px;
 }
 
 .new-tweet textarea::placeholder {
   color: black;
-  font-style: bold;
+  font-weight: 600;
   font-family: sans-serif;
 }
 
@@ -27,6 +28,14 @@ font-size: 25px;
   color: whitesmoke;
   cursor: pointer;
   padding: 5px 10px;
+}
+
+.new-tweet button:active {
+  background-color: azure;
+}
+
+.new-tweet button:hover {
+  background-color: rgb(152, 195, 239);
 }
 
 .new-tweet div {
