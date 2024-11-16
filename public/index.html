@@ -13,6 +13,9 @@
     <!-- Link to nav.css -->
     <link href="styles/nav.css" rel="stylesheet">
 
+    <!-- Link to new-tweet.css -->
+    <link href="styles/new-tweet.css" rel="stylesheet">
+
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -60,6 +63,19 @@
       <h1>Lorem Ipsum</h1>
       <p>Random words for lorem ipsum but they are homemade</p>
       <p>checking vertical stacking</p>
+
+      <!-- Adding the form to the page -->
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <form action="/tweets/" method="POST">
+          <label for="tweet-text"><!--What are you humming about?--></label>
+          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+          <div>
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
     </main>
   </body>
 </html>

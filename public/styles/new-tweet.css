@@ -1,0 +1,35 @@
+/* Container for new tweet form */
+
+.new-tweet {
+  background-color: whitesmoke;
+  margin: 20px auto;
+  padding: 20px;
+  width: 100%;
+}
+
+.new-tweet h2 {
+font-size: 25px;
+}
+
+.new-tweet textarea {
+  width: 100%;
+}
+
+.new-tweet textarea::placeholder {
+  color: black;
+  font-style: bold;
+  font-family: sans-serif;
+}
+
+.new-tweet button {
+  background-color: #4056A1;
+  font-family: 'Bungee', sans-serif;
+  color: whitesmoke;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.new-tweet div {
+  display: flex;
+  justify-content: space-between;
+}
