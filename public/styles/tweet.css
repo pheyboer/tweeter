@@ -27,27 +27,27 @@
   justify-content: space-between;
 }
 
-.tweet-header .avatar-name {
+.tweet-header .fullname-avatar {
   cursor: pointer;
+  font-size: 14px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-items: center;
 }
 
-.tweet-header .avatar-name .mini-avatar {
-  cursor: pointer;
-  border-radius: 90%;
-  width: 30px;
-}
-
-.tweet-header .avatar-name .fullname {
-  cursor: pointer;
-  font-size: 14px;
+.tweet-header .avatar2 {
+  width:75px;
+  height: 75px;
+  border-radius: 30%;
 }
 
 .tweet-header .username {
   cursor: pointer;
   color: grey;
+  font-size: 25px;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 
 .tweet-content {
