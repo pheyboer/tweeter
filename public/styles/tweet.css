@@ -1,0 +1,69 @@
+.tweet-container {
+  width: 97%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid;
+  padding: 5px;
+}
+
+.tweet {
+  border: 10px;
+  padding: 15px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tweet header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f4f1ec;
+}
+
+.tweet header h3 {
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+}
+
+.tweet header p {
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+}
+
+.tweet-content {
+  display: flex;
+}
+
+.tweet footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tweet-time {
+  color: grey;
+  font-size: 15px;
+  display: flex;
+  font-weight: bold;
+  padding: 1px;
+}
+
+.tweet-interact {
+  color: aqua;
+  display: flex;
+}
+
+.tweet:hover {
+  box-shadow: grey;
+}
+
+.tweet-interact i:hover {
+  color: orange;
+  cursor: pointer;
+}

@@ -17,6 +17,7 @@ font-size: 25px;
 .new-tweet textarea {
   width: 100%;
   padding: 10px;
+  background-color: #f4f1ec;
   border: none;
   border-bottom: 3px solid black;
   outline: none;
@@ -27,6 +28,7 @@ font-size: 25px;
   color: black;
   font-weight: 600;
   font-family: sans-serif;
+
 }
 
 .new-tweet-btn {

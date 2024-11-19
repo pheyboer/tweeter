@@ -5,36 +5,55 @@
     <title>Tweeter - Home Page</title>
 
     <!-- External CSS Normalize -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      type="text/css"
+    />
 
     <!-- Layout App CSS Link -->
-    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="styles/layout.css" type="text/css" />
 
     <!-- Link to nav.css -->
-    <link href="styles/nav.css" rel="stylesheet">
-
-    <!-- Link to new-tweet.css -->
-    <link href="styles/new-tweet.css" rel="stylesheet">
+    <link href="styles/nav.css" rel="stylesheet" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
-    <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="scripts/client.js"></script>
 
     <!-- Links for Fonts Requested -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee:wght@400&family=Source+Sans+3:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee:wght@400&family=Source+Sans+3:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Link for Font Awesome Image Angles Down -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!--Link for header.css  -->
-    <link href="/styles/header.css" rel="stylesheet">
+    <link href="styles/header.css" rel="stylesheet" />
+
+    <!-- Link fot tweets.css -->
+    <link href="styles/tweet.css" rel="stylesheet" />
+
+    <!-- Link to new-tweet.css -->
+    <link href="styles/new-tweet.css" rel="stylesheet" />
 
     <!-- Link for Character Counter -->
-    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <script
+      type="text/javascript"
+      src="scripts/composer-char-counter.js"
+    ></script>
   </head>
 
   <body>
@@ -43,19 +62,18 @@
       <span class="nav-title">tweeter</span>
 
       <!-- Content on the right -->
-       <div class="nav-tweet-btn">
-          <span><strong>Write</strong> a new tweet</span>
-          <i class="fa-solid fa-angles-down"></i>
-       </div>
+      <div class="nav-tweet-btn">
+        <span><strong>Write</strong> a new tweet</span>
+        <i class="fa-solid fa-angles-down"></i>
+      </div>
     </nav>
     <!--Header in the Body -->
-    <header>
-      <div>
-      </div>
+    <header class="main-header">
+      <div></div>
       <div class="avatar">
-        <img src="/images/profile-hex.png" alt="Avatar">
+        <img src="images/profile-hex.png" alt="Avatar" />
       </div>
-      <br>
+      <br />
       <div class="name">
         <h2>Your Name</h2>
       </div>
@@ -72,12 +90,40 @@
         <h2>Compose Tweet</h2>
         <form action="/tweets/" method="POST">
           <label for="tweet-text">What are you humming about?</label>
-          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+          <textarea
+            name="text"
+            id="tweet-text"
+            placeholder="What are you humming about?"
+          ></textarea>
           <div>
             <button type="submit" class="new-tweet-btn">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
+      </section>
+
+      <!-- Tweet Container -->
+      <section class="tweet-container">
+        <!-- First Tweet Article -->
+        <article class="tweet">
+          <header>
+            <h3>Name</h3>
+            <p>@username</p>
+          </header>
+          <p class="tweet-content">
+            If I have seen further, it is by stading on the shoulders of giants
+          </p>
+          <footer>
+            <span class="tweet-time">10 days ago</span>
+            <div class="tweet-interact">
+              <i class="reply"></i>
+              <i class="retweet"></i>
+              <i class="like"></i>
+            </div>
+          </footer>
+        </article>
+        <!-- Second Tweet Article -->
+        <article class="tweet"></article>
       </section>
     </main>
   </body>
