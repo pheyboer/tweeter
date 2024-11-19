@@ -90,7 +90,22 @@ $(document).ready(function () {
   $('form').on('submit', function (event) {
     event.preventDefault();
 
+    // Validation checks
+    const tweetText = $('#tweet-text').val().trim();
+    const tweetLength = tweetText.length;
+    // Get text from tweet-text area and trim white space
+    if (tweetLength === 0) {
+      alert('The tweet is empty! Please enter some text');
+      return;
+    }
+
+    if (tweetLength > 140) {
+      alert('Your tweet must be less than 140 characters!');
+      return;
+    }
+
     // Serialize form data and send it to the server as a query string
+    // if validation passes
     const serializedFormData = $(this).serialize();
 
     // Check serialized data
