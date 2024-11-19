@@ -14,33 +14,35 @@
 
 $(document).ready(function () {
   // Test / driver code (temporary). Eventually will get this from the server.
-  const tweetData = [
-    {
-      user: {
-        name: 'Newton',
-        avatars: 'https://i.imgur.com/73hZDYK.png',
-        handle: '@SirIsaac',
-      },
-      content: {
-        text: 'If I have seen further it is by standing on the shoulders of giants',
-      },
-      created_at: 1461116232227,
-    },
-    {
-      user: {
-        name: 'Descartes',
-        avatars: 'https://i.imgur.com/nlhLi3I.png',
-        handle: '@rd',
-      },
-      content: {
-        text: 'Je pense , donc je suis',
-      },
-      created_at: 1461113959088,
-    },
-  ];
+  // const tweetData = [
+  //   {
+  //     user: {
+  //       name: 'Newton',
+  //       avatars: 'https://i.imgur.com/73hZDYK.png',
+  //       handle: '@SirIsaac',
+  //     },
+  //     content: {
+  //       text: 'If I have seen further it is by standing on the shoulders of giants',
+  //     },
+  //     created_at: 1461116232227,
+  //   },
+  //   {
+  //     user: {
+  //       name: 'Descartes',
+  //       avatars: 'https://i.imgur.com/nlhLi3I.png',
+  //       handle: '@rd',
+  //     },
+  //     content: {
+  //       text: 'Je pense , donc je suis',
+  //     },
+  //     created_at: 1461113959088,
+  //   },
+  // ];
 
   // Function to turn tweet object into article element
   const createTweetElement = function (tweet) {
+    //Use Timeago.js to convert time
+    const tweetTime = timeago.format(tweet.created_at);
     const $tweet = $(`
     <article class="tweet">
       <header class="tweet-header">
@@ -54,7 +56,7 @@ $(document).ready(function () {
       </header>
       <p class="tweet-content">${tweet.content.text}</p>
       <footer>
-        <span class="tweet-time">${tweet.created_at}</span>
+        <span class="tweet-time">${tweetTime}</span>
         <div class="tweet-interact">
           <i class="fa-solid fa-flag"></i>
           <i class="fa-solid fa-retweet"></i>
@@ -81,7 +83,7 @@ $(document).ready(function () {
     }
   };
 
-  renderTweets(tweetData);
+  //renderTweets(tweetData);
 
   // Event Listener for Submit form and prevent default behaviour
 
@@ -103,8 +105,29 @@ $(document).ready(function () {
         console.log('Sucess! Tweet Posted', response);
       },
       error: function (xhr, error) {
-        console.log('Error Posting Tweet, or you didnt fill anything out', xhr, error);
+        console.log(
+          'Error Posting Tweet, or you didnt fill anything out',
+          xhr,
+          error
+        );
       },
     });
   });
+
+  // Function to get tweets from tweets page
+  const loadTweets = function () {
+    $.ajax({
+      method: 'GET',
+      url: '/tweets',
+      success: function (response) {
+        console.log('Tweets loaded', response);
+        renderTweets(response);
+      },
+      error: function (error) {
+        console.log('Error fetching tweet', error);
+      },
+    });
+  };
+
+  loadTweets();
 });
