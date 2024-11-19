@@ -54,10 +54,13 @@ const $tweet = createTweetElement(tweetData);
 
 // Function to append tweet to #tweeet-container
 const renderTweets = function(tweets) {
+  $('#tweets-container').empty();
+
   for (let i = 0; i < tweets.length; i++) {
     const $tweet = createTweetElement(tweets[i]);
+    $('tweet-container').append($tweet);
   }
-}
+};
 
 // Test / driver code (temporary)
 console.log($tweet); // to see what it looks like
