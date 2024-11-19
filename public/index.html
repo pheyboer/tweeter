@@ -40,6 +40,8 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- Links for Tweet Interaction -->
+
     <!--Link for header.css  -->
     <link href="styles/header.css" rel="stylesheet" />
 
@@ -69,7 +71,6 @@
     </nav>
     <!--Header in the Body -->
     <header class="main-header">
-      <div></div>
       <div class="avatar">
         <img src="images/profile-hex.png" alt="Avatar" />
       </div>
@@ -107,8 +108,32 @@
         <!-- First Tweet Article -->
         <article class="tweet">
           <header>
-            <h3>Name</h3>
+            <div class="mini-avatar">
+              <img src="images/profile-hex.png" alt="Avatar" />
+              <h3>Name</h3>
+            </div>
             <p>@username</p>
+          </header>
+          <p class="tweet-content">
+            If I have seen further, it is by stading on the shoulders of giants
+          </p>
+          <footer>
+            <span class="tweet-time">10 days ago</span>
+            <div class="tweet-interact">
+              <i class="fa-solid fa-flag"></i>
+              <i class="fa-solid fa-retweet"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </footer>
+        </article>
+        <!-- Second Tweet Article -->
+        <article class="tweet">
+          <header>
+            <div class="mini-avatar">
+              <img src="images/profile-hex.png" alt="Avatar" />
+              <h3>Name2</h3>
+            </div>
+            <p>@username2</p>
           </header>
           <p class="tweet-content">
             If I have seen further, it is by stading on the shoulders of giants
@@ -122,8 +147,6 @@
             </div>
           </footer>
         </article>
-        <!-- Second Tweet Article -->
-        <article class="tweet"></article>
       </section>
     </main>
   </body>

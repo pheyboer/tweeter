@@ -1,43 +1,58 @@
+/* Container for tweets */
+
 .tweet-container {
   width: 97%;
   margin: 20px auto;
   display: flex;
   flex-direction: column;
-  border: 3px solid;
   padding: 5px;
 }
 
 .tweet {
   border: 10px;
   padding: 15px;
-  height: 100px;
+  height: 150px;
+  border: 2px solid;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .tweet header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   background-color: #f4f1ec;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .tweet header h3 {
   font-size: 16px;
   cursor: pointer;
   display: flex;
-  align-items: flex-start;
+}
+
+.tweet header .mini-avatar {
+  width: 10px;
+  cursor: pointer;
+  gap: 10px;
+  border-radius: 50%;
+  object-fit: contain;
 }
 
 .tweet header p {
   font-size: 14px;
   cursor: pointer;
   display: flex;
-  align-items: flex-end;
+  text-align: right;
 }
 
 .tweet-content {
   display: flex;
+  text-align: center;
 }
 
 .tweet footer {
@@ -60,7 +75,7 @@
 }
 
 .tweet:hover {
-  box-shadow: grey;
+  box-shadow: 4px 8px 10px;
 }
 
 .tweet-interact i:hover {
