@@ -78,7 +78,7 @@ $(document).ready(function () {
 
     for (let i = 0; i < tweets.length; i++) {
       const $tweet = createTweetElement(tweets[i]);
-      $('#tweet-container').append($tweet);
+      $('#tweet-container').prepend($tweet);
     }
   };
 
