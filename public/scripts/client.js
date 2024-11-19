@@ -22,6 +22,7 @@ const tweetData = {
   created_at: 1461116232227,
 };
 
+// Function to turn tweet object into article element 
 const createTweetElement = function (tweet) {
   const $tweet = $(`
     <article class="tweet">
@@ -51,6 +52,13 @@ const createTweetElement = function (tweet) {
 
 const $tweet = createTweetElement(tweetData);
 
+// Function to append tweet to #tweeet-container
+const renderTweets = function(tweets) {
+  for (let i = 0; i < tweets.length; i++) {
+    const $tweet = createTweetElement(tweets[i]);
+  }
+}
+
 // Test / driver code (temporary)
 console.log($tweet); // to see what it looks like
-$('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
+$('#tweet-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
