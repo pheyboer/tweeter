@@ -29,6 +29,20 @@ const createTweetElement = function (tweet) {
         <div class="fullname-avatar">
           <img class="avatar2" src="${tweet.user.avatars}">
           <h2>${tweet.user.name}</h2>
+        </div>
+        <div class="username">
+          <p>${tweet.user.handle}</p>
+        </div>
+      </header>
+      <p class="tweet-content">${tweet.content.text}</p>
+      <footer>
+        <span class="tweet-time">${tweet.created_at}</span>
+        <div class="tweet-interact">
+          <i class="fa-solid fa-flag"></i>
+          <i class="fa-solid fa-retweet"></i>
+          <i class="fa-solid fa-heart"></i>
+        </div>
+      </footer>
     </article>
     `);
 
