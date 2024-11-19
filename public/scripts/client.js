@@ -25,8 +25,10 @@ const tweetData = {
 const createTweetElement = function (tweet) {
   const $tweet = $(`
     <article class="tweet">
-      <header>
-        <div class="">
+      <header class="tweet-header">
+        <div class="fullname-avatar">
+          <img class="avatar2" src="${tweet.user.avatars}">
+          <h2>${tweet.user.name}</h2>
     </article>
     `);
 
@@ -34,6 +36,7 @@ const createTweetElement = function (tweet) {
 };
 
 const $tweet = createTweetElement(tweetData);
+
 // Test / driver code (temporary)
 console.log($tweet); // to see what it looks like
 $('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
