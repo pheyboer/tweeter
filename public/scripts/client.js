@@ -118,6 +118,12 @@ $(document).ready(function () {
       data: serializedFormData,
       success: function (response) {
         console.log('Sucess! Tweet Posted', response);
+
+        // Prepend to tweet container. Clear text area. Reset Counter targetting right classes
+        const newTweet = createTweetElement(response);
+        $('#tweet-container').prepend(newTweet);
+        $('#tweet-text').val('');
+        $('.counter').text(140);
       },
       error: function (xhr, error) {
         console.log(
