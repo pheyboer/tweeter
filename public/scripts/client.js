@@ -119,9 +119,9 @@ $(document).ready(function () {
       success: function (response) {
         console.log('Sucess! Tweet Posted', response);
 
-        // Prepend to tweet container. Clear text area. Reset Counter targetting right classes
-        const newTweet = createTweetElement(response);
-        $('#tweet-container').prepend(newTweet);
+        // Load tweets. Clear text area. Reset Counter targetting right classes
+        loadTweets();
+        //$('#tweet-container').prepend(newTweet);
         $('#tweet-text').val('');
         $('.counter').text(140);
       },
