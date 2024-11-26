@@ -39,6 +39,13 @@ $(document).ready(function () {
   //   },
   // ];
 
+  // Escape function to prevent XSS
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   // Function to turn tweet object into article element
   const createTweetElement = function (tweet) {
     //Use Timeago.js to convert time
@@ -54,7 +61,7 @@ $(document).ready(function () {
           <p>${tweet.user.handle}</p>
         </div>
       </header>
-      <p class="tweet-content">${tweet.content.text}</p>
+      <p class="tweet-content">${escape(tweet.content.text)}</p>
       <footer>
         <span class="tweet-time">${tweetTime}</span>
         <div class="tweet-interact">
