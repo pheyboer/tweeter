@@ -91,10 +91,6 @@
 
     <!-- Page-specific (main) content here (container) -->
     <main class="container">
-      <!-- <h1>Lorem Ipsum</h1>
-      <p>Random words for lorem ipsum but they are homemade</p>
-      <p>checking vertical stacking</p> -->
-
       <!-- Adding the form to the page (new-tweet) -->
       <section class="new-tweet">
         <h2 style="display: none;">Compose Tweet</h2>
@@ -105,7 +101,7 @@
           <i class="fa-solid fa-exclamation-triangle"></i>
         </section>
         <form action="/tweets/" method="POST">
-          <label for="tweet-text">What are you humming about?</label>
+          <label for="tweet-text" style="display: none;">What are you humming about?</label>
           <textarea
             name="text"
             id="tweet-text"

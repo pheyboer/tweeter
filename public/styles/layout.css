@@ -30,27 +30,22 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
-/* Main Container */
+
+/* --------Main Container */
 main {
   width: 90%;
-  margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
   background-color: inherit;
   height: 100vh;
 }
 
-/* styling header */
+/* --------styling header */
 .main-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 200px;
-  height: 200px;
-  position: relative;
+  width: 50%;
 }
 
 .new-tweet {
@@ -59,32 +54,52 @@ main {
 }
 
 #tweet-container {
-  width: 65%;
   margin-left: 15px;
-}
+} 
+
 
 /* Adding Desktop breakpoint */
 
 @media (min-width: 1024px) {
-  main {
-    flex-direction: row;
+  body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
   }
 
-  .main-header {
-    width: 200px;
-    height: 200px;
-  }
-
-  .new-tweet, #tweet-container {
-    width: 50%;
+  main.container {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    padding-left: 200px;
+    width: 75%;
+    margin-left: auto;
     margin-right: 20px;
+    margin-top: 100px;
+    padding-top: 50px;
+  }
+
+  header.main-header {
+    width: 600px;
+    height: 400px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+  }
+
+  .new-tweet {
+    margin-bottom: 20px;
   }
 
   #tweet-container {
-    width: 70%;
+    margin-top: 20px;
   }
+  
 }
 
 /* Breakpoint for Tablet devices */
