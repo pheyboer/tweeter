@@ -1,8 +1,8 @@
 nav {
   height: 120px;
   width: 100%;
-  background-color: #4056A1;
-  color: #FFFFFF;
+  background-color: #4056a1;
+  color: #ffffff;
   padding: 0 1.5em;
   display: flex;
   align-items: center;
@@ -21,8 +21,22 @@ nav .nav-tweet-btn {
   text-align: center;
 }
 
+/* Added animation for nav bar icon to look like its pulsating */
 nav .nav-tweet-btn i {
   font-size: 1.2em;
   color: #eb0a0a;
   margin-top: 5px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

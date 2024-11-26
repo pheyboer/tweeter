@@ -17,20 +17,27 @@ font-size: 25px;
 .new-tweet .err-msg-cont {
   display: none;
   padding: 5px 10px;
-  margin: 1px auto;
+  margin: 3px auto;
   border: 2px solid red;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  width: 50%;
+  width: 40%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  justify-content: center;
 }
 
 .new-tweet .err-msg {
   color: red;
   font-weight: bold;
+  align-content: center;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
-.new-tweet .err-msg-cont .fa-exclamation-circle {
+.new-tweet .err-msg-cont .fa-exclamation-triangle {
   font-size: 20px;
   color: red ;
   margin-right: 10px;

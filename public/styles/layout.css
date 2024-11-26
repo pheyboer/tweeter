@@ -6,12 +6,14 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 /*
- * Global layout stuff
+ * Global layout stuff for layout management
  */
 
 body {
@@ -20,18 +22,79 @@ body {
   font-size: 24px;
   font-family: 'Source Sans 3', sans-serif;
   padding-top: 120px;
+  margin: 0;
+  min-height: 100vh;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- /* Main Container */
- main {
+/* Main Container */
+main {
   width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   background-color: inherit;
- }
+  height: 100vh;
+}
+
+/* styling header */
+.main-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.new-tweet {
+  width: 80%;
+  margin: 20px 0;
+}
+
+#tweet-container {
+  width: 65%;
+  margin-left: 15px;
+}
+
+/* Adding Desktop breakpoint */
+
+@media (min-width: 1024px) {
+  main {
+    flex-direction: row;
+  }
+
+  .main-header {
+    width: 200px;
+    height: 200px;
+  }
+
+  .new-tweet, #tweet-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+
+  #tweet-container {
+    width: 70%;
+  }
+}
+
+/* Breakpoint for Tablet devices */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  main {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .content {
+    margin-bottom: 15px;
+  }
+}
