@@ -98,7 +98,7 @@ $(document).ready(function () {
     event.preventDefault();
 
     // Error message hidin before validation
-    $('.err-msg-cont').slideUp();
+    //$('.err-msg-cont').slideUp();
 
     // Validation checks
     const tweetText = $('#tweet-text').val().trim();
@@ -107,12 +107,20 @@ $(document).ready(function () {
     if (tweetLength === 0) {
       $('.err-msg').text('The tweet is empty! Please enter some text');
       $('.err-msg-cont').slideDown();
+      //adding set timeout to slide the error back up after 2 seconds
+      setTimeout(function() {
+        $('.err-msg-cont').slideUp();
+      }, 2500);
       return;
     }
 
     if (tweetLength > 140) {
       $('.err-msg').text('Your tweet must be less than 140 characters!');
       $('.err-msg-cont').slideDown();
+      //adding set timeout to slide the error back up after 2 seconds
+      setTimeout(function() {
+        $('.err-msg-cont').slideUp();
+      }, 2500);
       return;
     }
 

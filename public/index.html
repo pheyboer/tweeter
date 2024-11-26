@@ -94,10 +94,12 @@
 
       <!-- Adding the form to the page (new-tweet) -->
       <section class="new-tweet">
-        <h2>Compose Tweet</h2>
+        <h2 style="display: none;">Compose Tweet</h2>
         <!--Container for error messages -->
         <section class="err-msg-cont" style="display: none;">
+          <i class="fa-solid fa-exclamation-circle"></i>
           <p class="err-msg"></p>
+          <i class="fa-solid fa-exclamation-circle"></i>
         </section>
         <form action="/tweets/" method="POST">
           <label for="tweet-text">What are you humming about?</label>
