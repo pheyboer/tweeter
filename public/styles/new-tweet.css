@@ -60,3 +60,13 @@ font-size: 25px;
   justify-content: space-between;
   margin: 10px;
 }
+
+.err-msg-con {
+  display: none;
+  padding: 10px;
+  border: 1px solid;
+}
+
+.err-msg {
+  
+}

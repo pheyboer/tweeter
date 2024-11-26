@@ -97,17 +97,22 @@ $(document).ready(function () {
   $('form').on('submit', function (event) {
     event.preventDefault();
 
+    // Error message hidin before validation
+    $('.err-msg-cont').slideUp();
+
     // Validation checks
     const tweetText = $('#tweet-text').val().trim();
     const tweetLength = tweetText.length;
     // Get text from tweet-text area and trim white space
     if (tweetLength === 0) {
-      alert('The tweet is empty! Please enter some text');
+      $('.err-msg').text('The tweet is empty! Please enter some text');
+      $('.err-msg-cont').slideDown();
       return;
     }
 
     if (tweetLength > 140) {
-      alert('Your tweet must be less than 140 characters!');
+      $('.err-msg').text('Your tweet must be less than 140 characters!');
+      $('.err-msg-cont').slideDown();
       return;
     }
 

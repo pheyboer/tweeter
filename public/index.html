@@ -86,15 +86,19 @@
       </div>
     </header>
 
-    <!-- Page-specific (main) content here -->
+    <!-- Page-specific (main) content here (container) -->
     <main class="container">
       <h1>Lorem Ipsum</h1>
       <p>Random words for lorem ipsum but they are homemade</p>
       <p>checking vertical stacking</p>
 
-      <!-- Adding the form to the page -->
+      <!-- Adding the form to the page (new-tweet) -->
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
+        <!--Container for error messages -->
+        <section class="err-msg-cont" style="display: none;">
+          <p class="err-msg"></p>
+        </section>
         <form action="/tweets/" method="POST">
           <label for="tweet-text">What are you humming about?</label>
           <textarea
@@ -112,6 +116,7 @@
       <!-- Tweet Container -->
       <section id="tweet-container">
         <!-- First Tweet Article (Used for setting up CSS) -->
+         <!-- I want to keep this code here as a reference -->
         <!-- <article class="tweet">
           <header class="tweet-header">
             <div class="fullname-avatar">
