@@ -30,13 +30,13 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
-
 /* --------Main Container */
 main {
   width: 90%;
   display: flex;
+  justify-content: center;
   background-color: inherit;
-  height: 100vh;
+  height: auto;
 }
 
 /* --------styling header */
@@ -44,7 +44,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   width: 50%;
 }
 
@@ -55,8 +54,7 @@ main {
 
 #tweet-container {
   margin-left: 15px;
-} 
-
+}
 
 /* Adding Desktop breakpoint */
 
@@ -65,7 +63,8 @@ main {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 100vh;
+    height: auto;
+    margin-top: 20px;
   }
 
   main.container {
@@ -77,7 +76,6 @@ main {
     width: 75%;
     margin-left: auto;
     margin-right: 20px;
-    margin-top: 100px;
     padding-top: 50px;
   }
 
@@ -89,7 +87,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 50px;
+    margin-left: 100px;
+    margin-bottom: 900px;
   }
 
   .new-tweet {
@@ -99,7 +98,16 @@ main {
   #tweet-container {
     margin-top: 20px;
   }
-  
+
+  .err-msg-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: auto;
+    margin-top: 20px;
+    padding-top: 20px;
+  }
 }
 
 /* Breakpoint for Tablet devices */
@@ -109,7 +117,100 @@ main {
     flex-direction: column;
     padding: 20px;
   }
-  .content {
+
+  .main-header {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .err-msg-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%;
+    width: auto;
+    height: auto;
+    margin-top: 50px;
+    padding-top: 20px;
+    overflow: hidden;
+    margin: 10px auto;
+  }
+
+  .new-tweet {
+    width: 90%;
     margin-bottom: 15px;
+  }
+
+  #tweet-container {
+    margin-top: 20px;
+  }
+}
+
+/* breakpoint for smaller tablets with text size change */
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 50px;
+  }
+
+  .main-header {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .err-msg-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: auto;
+    margin-top: 10px;
+    padding-top: 20px;
+    overflow: hidden;
+  }
+
+  .new-tweet {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+
+  #tweet-container {
+    margin-top: 20px;
+  }
+}
+
+/* breakpoint for small screens like mobile */
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 50px;
+  }
+
+  .main-header {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .new-tweet {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  #tweet-container {
+    margin-left: 0;
+    margin-top: 20px;
   }
 }

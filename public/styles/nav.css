@@ -13,12 +13,15 @@ nav {
 
 nav .nav-title {
   font-family: 'Bungee', sans-serif;
+  font-size: larger;
+  cursor: pointer;
 }
 
 nav .nav-tweet-btn {
   display: flex;
   flex-direction: column;
   text-align: center;
+  cursor: pointer;
 }
 
 /* Added animation for nav bar icon to look like its pulsating */
@@ -38,5 +41,11 @@ nav .nav-tweet-btn i {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@media (max-width: 999px) {
+  nav {
+    background-color: rgb(233, 181, 58);
   }
 }
