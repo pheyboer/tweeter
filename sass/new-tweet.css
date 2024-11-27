@@ -1,0 +1,99 @@
+/* Container for new tweet form */
+
+.new-tweet {
+  display: none;
+  margin: 20px auto;
+  padding: 20px;
+  width: 100%;
+}
+
+.new-tweet.show {
+  display: block;
+  opacity: 1;
+}
+
+.new-tweet h2 {
+font-size: 25px;
+}
+
+.new-tweet label {
+  font-weight: bold;
+}
+
+.new-tweet .err-msg-cont {
+  display: none;
+  padding: 5px 10px;
+  margin: 3px auto;
+  border: 2px solid red;
+  display: flex;
+  align-items: center;
+  width: 40%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  justify-content: center;
+}
+
+.new-tweet .err-msg {
+  color: red;
+  font-weight: bold;
+  align-content: center;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.new-tweet .err-msg-cont .fa-exclamation-triangle {
+  font-size: 20px;
+  color: red ;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.new-tweet textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: #f4f1ec;
+  border: none;
+  border-bottom: 3px solid black;
+  outline: none;
+  resize: none;
+}
+
+.new-tweet textarea::placeholder {
+  color: black;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.new-tweet-btn {
+  background-color: #4056A1;
+  font-family: 'Bungee', sans-serif;
+  color: whitesmoke;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: none;
+}
+
+.new-tweet-btn:active {
+  background-color: azure;
+}
+
+.new-tweet-btn:hover {
+  background-color: rgb(152, 195, 239);
+}
+
+.counter {
+  font-family: 'Bungee', sans-serif;
+}
+
+.counter.max-limit {
+  color: red;
+}
+
+.new-tweet div {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+

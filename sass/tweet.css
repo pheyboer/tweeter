@@ -1,0 +1,94 @@
+/* Container for tweets */
+
+.tweet-container {
+  width: 97%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.tweet {
+  border: 10px;
+  padding: 15px;
+  border: 2px solid;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.tweet-header {
+  display: flex;
+  background-color: #f4f1ec;
+  flex-direction: row;
+  padding: 5px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.tweet-header .fullname-avatar {
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tweet-header .avatar2 {
+  width:75px;
+  height: 75px;
+  border-radius: 30%;
+}
+
+.tweet-header .username {
+  cursor: pointer;
+  color: grey;
+  font-size: 25px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.tweet-content {
+  display: flex;
+  text-align: center;
+  border-bottom: 3px solid black;
+  padding: 5px;
+}
+
+.tweet footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tweet-time {
+  color: grey;
+  font-size: 15px;
+  display: flex;
+  font-weight: bold;
+  padding-bottom: 10px;
+  align-items: flex-start;
+}
+
+.tweet-interact {
+  display: flex;
+  gap: 5px;
+}
+
+.tweet-interact i {
+  color: rgba(0, 255, 255, 0.644);
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+}
+
+.tweet:hover {
+  box-shadow: 8px 8px 10px grey;
+}
+
+.tweet-interact i:hover {
+  color: orange;
+  cursor: pointer;
+}
