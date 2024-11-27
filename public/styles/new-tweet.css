@@ -1,5 +1,4 @@
 /* Container for new tweet form */
-
 .new-tweet {
   display: none;
   margin: 20px auto;
@@ -13,7 +12,7 @@
 }
 
 .new-tweet h2 {
-font-size: 25px;
+  font-size: 25px;
 }
 
 .new-tweet label {
@@ -45,7 +44,7 @@ font-size: 25px;
 
 .new-tweet .err-msg-cont .fa-exclamation-triangle {
   font-size: 20px;
-  color: red ;
+  color: red;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -68,7 +67,7 @@ font-size: 25px;
 
 .new-tweet-btn {
   background-color: #4056A1;
-  font-family: 'Bungee', sans-serif;
+  font-family: "Bungee", sans-serif;
   color: whitesmoke;
   cursor: pointer;
   padding: 5px 10px;
@@ -84,7 +83,7 @@ font-size: 25px;
 }
 
 .counter {
-  font-family: 'Bungee', sans-serif;
+  font-family: "Bungee", sans-serif;
 }
 
 .counter.max-limit {
@@ -96,4 +95,3 @@ font-size: 25px;
   justify-content: space-between;
   margin: 10px;
 }
-

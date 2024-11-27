@@ -1,5 +1,4 @@
 /* Container for tweets */
-
 .tweet-container {
   width: 97%;
   margin: 20px auto;
@@ -37,7 +36,7 @@
 }
 
 .tweet-header .avatar2 {
-  width:75px;
+  width: 75px;
   height: 75px;
   border-radius: 30%;
 }

@@ -155,6 +155,10 @@ $(document).ready(function () {
   });
 
   $('#toggleFormBtn').on('click', function () {
-    $('.new-tweet').toggleClass('show'); // Toggle the 'show' class on the form
+    $('.new-tweet').slideToggle(300, function () {
+      if ($('.new-tweet').is(':visible')) {
+        $('.new-tweet textarea').focus();
+      }
+    });
   });
 });

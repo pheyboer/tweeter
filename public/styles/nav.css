@@ -12,7 +12,7 @@ nav {
 }
 
 nav .nav-title {
-  font-family: 'Bungee', sans-serif;
+  font-family: "Bungee", sans-serif;
   font-size: larger;
   cursor: pointer;
 }
@@ -43,7 +43,6 @@ nav .nav-tweet-btn i {
     transform: scale(1);
   }
 }
-
 @media (max-width: 1024px) {
   nav {
     background-color: rgb(233, 181, 58);

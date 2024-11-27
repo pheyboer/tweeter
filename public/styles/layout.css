@@ -6,6 +6,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
@@ -15,12 +16,11 @@ html {
 /*
  * Global layout stuff for layout management
  */
-
 body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: "Source Sans 3", sans-serif;
   padding-top: 120px;
   margin: 0;
   min-height: 100vh;
@@ -29,7 +29,6 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-
 /* --------Main Container */
 main {
   width: 90%;
@@ -57,7 +56,6 @@ main {
 }
 
 /* Adding Desktop breakpoint */
-
 @media (min-width: 1024px) {
   body {
     display: flex;
@@ -66,7 +64,6 @@ main {
     height: auto;
     margin-top: 20px;
   }
-
   main.container {
     display: flex;
     flex-direction: column;
@@ -78,7 +75,6 @@ main {
     margin-right: 20px;
     padding-top: 50px;
   }
-
   header.main-header {
     width: 600px;
     height: 400px;
@@ -90,15 +86,12 @@ main {
     margin-top: 100px;
     align-self: flex-start;
   }
-
   .new-tweet {
     margin-bottom: 20px;
   }
-
   #tweet-container {
     margin-top: 20px;
   }
-
   .err-msg-cont {
     display: flex;
     justify-content: center;
@@ -109,22 +102,18 @@ main {
     padding-top: 20px;
   }
 }
-
 /* Breakpoint for Tablet devices */
-
 @media (min-width: 768px) and (max-width: 1023px) {
   main {
     flex-direction: column;
     padding: 20px;
   }
-
   .main-header {
     width: 100%;
     height: auto;
     padding: 20px;
     position: relative;
   }
-
   .err-msg-cont {
     display: flex;
     justify-content: center;
@@ -137,35 +126,29 @@ main {
     overflow: hidden;
     margin: 10px auto;
   }
-
   .new-tweet {
     width: 90%;
     margin-bottom: 15px;
   }
-
   #tweet-container {
     margin-top: 20px;
   }
 }
-
 /* breakpoint for smaller tablets with text size change */
 @media (min-width: 481px) and (max-width: 767px) {
   body {
     font-size: 18px;
   }
-
   main {
     flex-direction: column;
     padding: 20px;
     margin-top: 50px;
   }
-
   .main-header {
     width: 100%;
     height: auto;
     padding: 20px;
   }
-
   .err-msg-cont {
     display: flex;
     justify-content: center;
@@ -176,40 +159,33 @@ main {
     padding-top: 20px;
     overflow: hidden;
   }
-
   .new-tweet {
     width: 90%;
     margin-bottom: 15px;
   }
-
   #tweet-container {
     margin-top: 20px;
   }
 }
-
 /* breakpoint for small screens like mobile */
 @media (max-width: 480px) {
   body {
     font-size: 16px;
   }
-
   main {
     flex-direction: column;
     padding: 10px;
     margin-top: 50px;
   }
-
   .main-header {
     width: 100%;
     padding: 20px;
     text-align: center;
   }
-
   .new-tweet {
     width: 100%;
     margin: 10px 0;
   }
-
   #tweet-container {
     margin-left: 0;
     margin-top: 20px;
