@@ -85,10 +85,9 @@ main {
     padding-top: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-left: 100px;
-    margin-bottom: 900px;
+    margin-bottom: 400px;
+    margin-top: 25px;
   }
 
   .new-tweet {
@@ -122,6 +121,7 @@ main {
     width: 100%;
     height: auto;
     padding: 20px;
+    margin-top: 25px;
   }
 
   .err-msg-cont {

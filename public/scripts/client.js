@@ -15,7 +15,7 @@
 $(document).ready(function () {
   // Escape function to prevent XSS
   const escape = function (str) {
-    let div = document.createElement("div");
+    let div = document.createElement('div');
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
@@ -82,7 +82,7 @@ $(document).ready(function () {
       $('.err-msg').text('The tweet is empty! Please enter some text');
       $('.err-msg-cont').slideDown();
       //adding set timeout to slide the error back up after 2 seconds
-      setTimeout(function() {
+      setTimeout(function () {
         $('.err-msg-cont').slideUp();
       }, 2500);
       return;
@@ -92,7 +92,7 @@ $(document).ready(function () {
       $('.err-msg').text('Your tweet must be less than 140 characters!');
       $('.err-msg-cont').slideDown();
       //adding set timeout to slide the error back up after 2 seconds
-      setTimeout(function() {
+      setTimeout(function () {
         $('.err-msg-cont').slideUp();
       }, 2500);
       return;
@@ -145,4 +145,16 @@ $(document).ready(function () {
   };
 
   loadTweets();
+
+  // Added event listener for keydown 'enter' in the form submission area
+  $('#tweet-text').on('keydown', function (event) {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      $('form').submit();
+    }
+  });
+
+  $('#toggleFormBtn').on('click', function () {
+    $('.new-tweet').toggleClass('show'); // Toggle the 'show' class on the form
+  });
 });

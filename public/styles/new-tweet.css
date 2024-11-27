@@ -1,9 +1,15 @@
 /* Container for new tweet form */
 
 .new-tweet {
+  display: none;
   margin: 20px auto;
   padding: 20px;
   width: 100%;
+}
+
+.new-tweet.show {
+  display: block;
+  opacity: 1;
 }
 
 .new-tweet h2 {
