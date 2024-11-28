@@ -24,3 +24,8 @@ Users can create short posts of up to 140 characters and have them append to the
 - "express": "^4.13.4",
 - "md5": "^2.1.0"
 - Node 5.10.x or above
+
+## Dev Dependencies
+
+- Nodemon
+- SASS
