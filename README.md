@@ -4,7 +4,7 @@ A simple single-page AJAX-based Twitter clone that uses jQuery, HTML5, CSS, and 
 
 This version is desktop, tablet, and mobile friendly.
 
-Users can create short posts of up to 140 characters and have them append to the main page. Posts are sequential, with the most recent posts appearing at the top of the page. Tweeter fetches a list of posts from a simplified 'server' and allows users to add posts to this list dynamically. All requests are made asynchronously
+Users can create short posts of up to 140 characters and have them append to the main page. Posts are sequential, with the most recent posts appearing at the top of the page. Tweeter fetches a list of posts from a simplified 'server' and allows users to add posts to this list dynamically. All requests are made asynchronously.
 
 ## Getting Started
 
