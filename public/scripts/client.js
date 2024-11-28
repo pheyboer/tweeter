@@ -64,15 +64,10 @@ $(document).ready(function () {
     }
   };
 
-  //renderTweets(tweetData);
-
   // Event Listener for Submit form and prevent default behaviour
 
   $('form').on('submit', function (event) {
     event.preventDefault();
-
-    // Error message hidin before validation
-    //$('.err-msg-cont').slideUp();
 
     // Validation checks
     const tweetText = $('#tweet-text').val().trim();
@@ -115,7 +110,6 @@ $(document).ready(function () {
 
         // Load tweets. Clear text area. Reset Counter targetting right classes
         loadTweets();
-        //$('#tweet-container').prepend(newTweet);
         $('#tweet-text').val('');
         $('.counter').text(140);
       },
@@ -154,6 +148,7 @@ $(document).ready(function () {
     }
   });
 
+  //Added a toggle form button event listener
   $('#toggleFormBtn').on('click', function () {
     $('.new-tweet').slideToggle(300, function () {
       if ($('.new-tweet').is(':visible')) {

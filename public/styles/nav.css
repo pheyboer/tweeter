@@ -9,23 +9,27 @@ nav {
   justify-content: space-between;
   position: fixed;
   top: 0;
+  /* Added animation for nav bar icon to look like its pulsating */
 }
-
 nav .nav-title {
   font-family: "Bungee", sans-serif;
   font-size: larger;
   cursor: pointer;
 }
-
+nav .nav-header-img {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
 nav .nav-tweet-btn {
   display: flex;
   flex-direction: column;
   text-align: center;
   cursor: pointer;
 }
-
-/* Added animation for nav bar icon to look like its pulsating */
-nav .nav-tweet-btn i {
+nav i {
+  display: flex;
+  align-items: center;
   font-size: 1.2em;
   color: #eb0a0a;
   margin-top: 5px;
