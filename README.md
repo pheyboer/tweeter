@@ -8,9 +8,10 @@ Users can create short posts of up to 140 characters and have them append to the
 
 ## Getting Started
 
-1. Install dependencies using the `npm install` command.
-2. Start the web server using the `npm start` command. The app will be served at <http://localhost:8080/>.
-3. Go to <http://localhost:8080/> in your browser.
+1. Clone this repository onto your local machine 
+2. Install dependencies using the `npm install` command.
+3. Start the web server using the `npm start` command. The app will be served at <http://localhost:8080/>.
+4. Go to <http://localhost:8080/> in your browser.
 
 ## Final Screenshots
 
